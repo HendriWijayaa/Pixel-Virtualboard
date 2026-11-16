@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  h1 {
+    font-family: 'Google Sans Flex', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+  }
+
+  /* Keep input and textarea selectable */
+  input, textarea {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
+
+/* Custom Sharp Keycap Shadows for firm, tactile feel without rounded corners */
+.keycap-tactile {
+  border-radius: 0px !important;
+  transition: transform 0.05s ease-out, box-shadow 0.05s ease-out, background-color 0.15s ease;
+}
+
+.keycap-tactile:active, .keycap-tactile.key-pressed {
+  transform: translateY(2px) scale(0.99);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "KeyVibe - Studio Virtual Keyboard",
+  "description": "Aplikasi virtual keyboard interaktif berbasis web dengan aneka layout (QWERTY, AZERTY, Dvorak, Numpad), efek suara mechanical switch, deteksi keyboard fisik, tes kecepatan ketik, dan inspektor tombol.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
